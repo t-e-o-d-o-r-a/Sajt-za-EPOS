@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleRegistracija.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/styleNaslovna.css">
+    
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    
+    <title>TIER: Registracija</title>
+</head>
+<body>
+    <nav class="navigacija">
+
+        <a href="index.html"><img class="nav-logo" src="img/tier.png" alt="Logo"></a>
+
+        <ul class="nav-stranice" id="nav-lista">
+            <li class="strana" id="naslovna"><a href="index.html">Naslovna</a></li>
+            <li class="strana"><a href="registracija.html">Registracija</a></li>
+            <li class="strana"><a href="oglasi.html">Oglasi</a></li>
+            <li class="strana"><a href="blog.html">Blog</a></li>
+            <li class="strana"><a href="kontakt.html">Kontakt</a></li>
+            <li>
+                <div class="ikonice">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="ikonica" src="img/instagram.png" alt="instagram"></a>
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img class="ikonica"  src="img/twitter.png" alt="twitter"></a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img class="ikonica" src="img/facebook.png" alt="facebook">
+                    </a>
+    
+                </div>
+            </li>
+        </ul>
+        
+        <div class="burger">
+            <div class="crtice">
+                <div class="stavka"></div>
+                <div class="stavka"></div>
+                <div class="stavka"></div>
+
+                
+            </div>
+            
+            <div class="paket">
+                <ul class="meni">
+                    <a href="index.html"><img class="meni-logo" src="img/tier.png" alt="Logo"></a>
+                    <li class="strana"><a href="index.html">Naslovna</a></li>
+                    <li class="strana"><a href="registracija.html">Registracija</a></li>
+                    <li class="strana"><a href="oglasi.html">Oglasi</a></li>
+                    <li class="strana"><a href="blog.html">Blog</a></li>
+                    <li class="strana"><a href="kontakt.html">Kontakt</a></li>
+
+                </ul>
+            </div>
+            
+
+        </div>
+
+            
+
+    </nav>
+    <form class="forma" id="forma">
+            
+        <div class="levo">
+            <div>
+                <h2 class="deo"><i>Izaberite kategoriju za registraciju...</i></h2>
+            </div>
+            <br>
+            <div>
+                <select name="tipKorisnika" id="tipKorisnika" >
+
+                    <option class="kategorija" value="Posmatrač">Posmatrač</option>
+                    <optgroup class="kategorija ostalo" label="Ostalo">
+                        <option value="Bloger">Bloger</option>
+                        <option value="Oglašavanje">Oglašavanje</option>
+                        
+
+                    </optgroup>
+
+
+                </select>
+            </div>
+            
+            <div>
+                <h2 class="deo"><i>Sada popunite ostale podatke...</i></h2>
+                
+            </div>
+            
+            <label class="labele" for="ime"><b>Korisničko ime</b></label>
+            <br>
+                
+            <input class="unos" type="text" name="ime" id="ime" size="50" minlength="7" maxlength="30" required>
+            <br>
+            <label class="zvezdica" for="ime">*Ovo polje je obavezno</label>
+            <br>
+
+
+            <label class="labele" for="email"><b>E-mail</b></label>
+            <br>
+            <input class="unos" type="email" name="email" id="email" size="50"  maxlength="30" required>
+            <br>    
+            <label class="zvezdica" for="email">*Ovo polje je obavezno</label>
+            <br>
+
+            <label class="labele" for="password"><b>Šifra (najmanje 7 karaktera po izboru)</b></label>
+            <br>
+            <input class="unos" type="password" name="password" id="password" size="50"  minlength="7" required>
+            <br>
+            
+            <div class="pomoc">        
+                <label class="zvezdica" for="password">*Ovo polje je obavezno</label>
+                <br>
+                <input type="checkbox" name="prikaz" id="prikaz">Prikaži šifru
+
+                <br>
+            </div>
+
+                
+            <div class="dugmad">
+                
+                <button class="dugmeReg" type="submit" id="prosledi"><h4>Prosledite</h4></button>
+                <button class="dugmeReg" type="reset" id="restartuj"><h4>Restart</h4></button>
+            </div>
+
+            
+        </div>
+        <!-- kraj za levo -->
+
+        <div class="desno">
+            <div>
+                
+                <label class="labele" for="newsletter">Da li želite da se prijavite na newsletter?</label>
+                <br>
+                <input type="radio" name="newsletter" value="da" id="newsletterDa" checked>Da
+                <input type="radio" name="newsletter" value="ne" id="newsletterNe">Ne
+            </div>
+            <div>
+                <label class="labele" for="obav">Označite koja obaveštenja želite da se šalju na mail:</label>
+                <br>
+                <div class="obavestenja">
+                    <input type="checkbox" name="obav" value="oglas" id="oglas">
+                    Oglas
+                    <br>
+
+                    <input type="checkbox" name="obav" value="blog" id="blog">
+                    Blog
+                    <br>
+                    <input type="checkbox" name="obav" value="ostalo" id="ostalo">
+                    Ostalo (vezano za sajt)
+                    <br>
+                 </div>  
+
+                <div>
+                    
+                    <label class="labele" for="obav">Molimo označite:</label>
+                    <br>
+                    <div  class="koriscenje">
+                        <input type="checkbox" name="obav" value="uslov" id="obavezno" required>
+                        <h5 id="usloviKoriscenja">Slažem se sa uslovima korišćenja</h5>
+                    </div>
+                    
+                    <label class="zvezdica" for="obavezno">*Ovo polje je obavezno</label>
+                    <br>
+                    <label class="labele" for="pitanja" id="podsetnik">Ukoliko imate neko pitanje, <br> možete ovde da postavite:</label>
+                    <br>
+                    <textarea class="unos" name="pitanja" id="pitanja" cols="50" rows="10"></textarea>
+                    <br>
+                    <br>
+                </div>  
+
+            
+            
+                <img src="img/silueta.png" alt="" id="silueta">
+            </div>
+        </div>
+        
+    </form>
+    <footer>
+        <p>
+            <br>
+            <br>Beograd, Srbija
+            <br>Drugi domaći zadatak iz elektronskog poslovanja
+            <br>Vukmirov Ivana, Vojnović Anđelija, Vučković Teodora
+            <br>@Copyright 2022
+            <br>
+            <a href="#"><img class="ikonica" id="strelica" src="img/strelicaGore.png" alt="strelica"></a>
+        
+            <br><br><br>
+        </p>
+    </footer>
+
+    
+    <script src="js/scriptRegistracija.js"></script>
+    <script src="js/scriptOglasi.js"></script>
+    <script src="js/jquery.js"></script>
+    
+    
+</body>
+</html>

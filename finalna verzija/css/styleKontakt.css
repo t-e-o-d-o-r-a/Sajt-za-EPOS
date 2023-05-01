@@ -1,0 +1,38 @@
+body{
+    margin: 0%;
+    font-family: 'Century Gothic', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #1c3039;
+}
+
+a:hover{
+    color: #E5EEEE;
+}
+.Prvidiv{
+    color:azure ;
+    text-align: center;
+    text-shadow: 2px 2px #315161;
+    
+}
+.Drugidiv{
+    background-color: #4397A0;
+    text-align: center;
+    color: azure;
+    
+}
+.Trecidiv{
+    text-align: center;
+    font-size: smaller;
+    
+
+}
+h2:hover{
+    color: #315161;
+}
+#gde{
+    text-align: center;
+    background-color: #4397A0;
+}

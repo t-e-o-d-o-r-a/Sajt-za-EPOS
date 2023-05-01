@@ -1,0 +1,137 @@
+body{
+    font-family: 'Century Gothic', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #1c3039;
+}
+
+a:hover{
+    color: #E5EEEE;
+}
+.deo{
+    color: white;
+    
+    font-size: 24;
+    text-shadow: 2px 2px #315161;
+
+}
+select {
+    width: 600px;
+    text-align: center;
+    
+    
+}
+
+
+.forma{
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 50px;
+    background-image: linear-gradient(to top,white, #4397A0);
+    text-align: center;
+    padding-bottom: 70px;
+    
+    
+
+}
+
+
+.unos{
+    background-color: white;
+    width: 500px;
+}
+
+.labele{
+    
+    
+    color:#E5EEEE ;
+
+}
+
+
+
+.obavestenja{
+    text-align: center;
+    
+    
+}
+
+
+.dugmeReg{
+    margin:15px;
+    border:20px;
+    border-radius: 10px;
+    background-color: #315161;
+    width: 100px;
+    height: 50px;
+
+}
+
+
+
+.dugmeReg:hover{
+    
+    background-color: #F48271;
+    transition: 0.25s;
+
+
+}
+
+
+h4{
+    
+    font-style: italic;
+    color: white;
+    text-shadow: 3px 3px 5px #000000;
+
+}
+
+h5{
+    margin: 5px;
+    font-size: 15px;
+}
+
+#silueta{
+    height: 250px;
+    width: 325px;
+}
+
+.zvezdica{
+    display: flex;
+    justify-content: end;   
+    color: #315161;
+    margin-right: 70px;
+    
+}
+
+.crveno{
+    border: 2px solid rgb(199, 0, 0);
+}
+
+
+.koriscenje{
+    display: flex;
+    justify-content: center;
+}
+
+textarea{
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 50px;
+    max-height: 200px;
+}
+
+
+@media(max-width:860px){
+    .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
